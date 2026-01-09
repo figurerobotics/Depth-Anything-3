@@ -191,6 +191,7 @@ class DepthAnything3(nn.Module, PyTorchModelHubMixin):
 
         if "colmap" in export_format:
             assert isinstance(image[0], str), "`image` must be image paths for COLMAP export."
+            raise ValueError(f"Unsupported export format: {export_format}")
 
         # Preprocess images
         imgs_cpu, extrinsics, intrinsics = self._preprocess_inputs(
