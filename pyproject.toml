@@ -20,7 +20,7 @@ dependencies = [
     "huggingface_hub",
     "imageio",
     "numpy<2",
-    "opencv-contrib-python",
+    "opencv-python-headless",
     "xformers",
     "open3d",
     "fastapi",
